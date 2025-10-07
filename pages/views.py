@@ -4,3 +4,6 @@ from django.http import HttpResponse
 def index(request):
     context={'name':'Tawfiq','mark':'99'}
     return render(request,'index.html',context)
+
+def about(request):
+    return render(request,'about.html')
